@@ -15,7 +15,12 @@ namespace OopCatExercise
 
         public override string Eat()
         {
-            return "Purrrrrrr";
+            Random r1 = new Random();
+            int _randnum = r1.Next(5);
+            if (_randnum == 3)
+                return "It will do I suppose";
+            else
+                return "Purrrrrrr";
         }
     }
 
